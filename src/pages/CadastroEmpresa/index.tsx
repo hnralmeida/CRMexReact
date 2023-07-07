@@ -21,7 +21,6 @@ import { useForm, Controller } from 'react-hook-form';
 // navegação
 import { useNavigate } from 'react-router-dom';
 import Alert from "../../components/Alert";
-import Api from "../../services/api";
 
 const passwordRegExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 const onlyNumbers = new RegExp('([0-9]{2}[.]?[0-9]{3}[.]?[0-9]{3}[/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[.]?[0-9]{3}[.]?[0-9]{3}[-]?[0-9]{2})|[0-9]{15}');
@@ -45,20 +44,16 @@ function CriarEmpresa() {
 
     const navigate = useNavigate();
 
-    const { control, setValue, handleSubmit: onSubmit, formState: { errors } } = useForm({ resolver: yupResolver(userSchema) });
+    const { control, handleSubmit: onSubmit, formState: { errors } } = useForm({ resolver: yupResolver(userSchema) });
 
     function handleSubmit() {
         const app = ExternalAuthService.getInstance();
-        Api.post("empresas",
-        control._formValues
-        ).then((res) => {
-            console.log("submit answer: " + res);
-            app.createEmpresaWithEmailAndPassword(control._formValues, res.data.id).then(() => {
-                navigate("login");
-            });
-        }).catch((error) => {
-            alert(error);
-        })
+
+        console.log("submit answer: " + control._formValues);
+        app.createEmpresaWithEmailAndPassword(control._formValues, 1).then(() => {
+            navigate("login");
+        });
+
     }
 
     const [backWarning, setBackWarning] = React.useState(false);

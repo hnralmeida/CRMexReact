@@ -1,5 +1,5 @@
 import * as S from './styles';
-import Logo from '../../assets/Logo.png';
+import Logo from '../../assets/Logo_noText.png';
 import { useAuth } from '../../contexts/authProvider'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -29,7 +29,8 @@ function Login() {
         <S.Container className="App">
             <S.Content id="home">
                 <S.Logo>
-                    <img src={Logo} alt="Logo" />
+                    <S.LogoHand src={Logo} alt="Logo"/>
+                    {/* <img src={Logo} alt="Logo"/> */}
                 </S.Logo>
                 <S.Line />
                 <div className='bloco2'>

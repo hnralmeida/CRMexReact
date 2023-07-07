@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   justify-content: center;
-  background-color: #092458;
+  background-color: #000;
+  background: no-repeat center, linear-gradient(to bottom, GRAY, BLACK);
   height: 100vh;
   width: 100vw;
   // margin-top: 230px;
@@ -13,6 +14,9 @@ export const Container = styled.div`
     align-items: center;
     }
   }
+`
+export const LogoHand = styled.img`
+ background-blend-mode: multiply;
 `
 
 export const FormLogin = styled.div`
@@ -38,11 +42,12 @@ export const Content = styled.div`
     width: 75%;
     height: 50px;
     margin: 0 10%;
-    background-color: #092458;
+    background-color: #000;
     border: 2px solid #fff;
     margin-bottom: 30px;
     border-radius: 10px;
-    color: #fff;
+    color: #ffffaa;
+    padding-left: 15px;
     font-size: 20px;
 
     @media (max-width: 800px) {
@@ -51,7 +56,6 @@ export const Content = styled.div`
       padding: 0px;
       margin: 0px;
       margin-bottom: 30px;
-   
    }
   }
 
@@ -84,6 +88,7 @@ export const Logo = styled.div`
   img {
     width: 300px;
     margin-right: 80px;
+    background-blend-mode: multiply;
   }
 
   @media (max-width: 800px) {
@@ -150,7 +155,7 @@ export const Button = styled.div`
     height: 50px;
     border: 2px solid #fff;
     border-radius: 10px;
-    color: #092458;
+    color: ##ffffaa;
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 30px;

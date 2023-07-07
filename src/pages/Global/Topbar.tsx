@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import IconSettings from "../../components/IconSettings";
 // import IconNotification from "../../components/IconNotification";
-import Logo from "../../assets/siad_transp_noTypo.png";
+import Logo from "../../assets/Logo_transp.png";
 
 function Topbar() {
 
