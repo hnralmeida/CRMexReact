@@ -7,7 +7,7 @@
     <img src="src/assets/Logo_noText.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Exemplo de CRM usando React</h3>
+  <h3 align="center">CRM example with React</h3>
 
   <p align="center">
     Precisa de uma ferramenta para gerenciamento de relação com Cliente? Este é um exemplo do que seria
@@ -59,16 +59,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+CRM example built with React, authentication with firebase. The id is from the author, open an issue if there's any problem with that.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,14 +69,8 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+[![React][React.js]](https://reactjs.org/)
+[![Vite][Vite.js]](https://vitejs.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,18 +94,17 @@ This is an example of how to list things you need to use the software and how to
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/hnralmeida/CRMexReact.git
    ```
-3. Install NPM packages
+2. Install YARN packages
    ```sh
-   npm install
+   yarn
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Execute on browser
+   ```sh
+   yarn dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -130,9 +114,14 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+You can get a powerful workspace to create and administrate your company.
+![Dashboard with full sidebar][dashboard_1]
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Flexible interface.
+![Dashboard with hided sidebar][dashboard_2]
+
+Administrate your resources!
+![Dashboard with full sidebar][datagrid]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,15 +130,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Add Screens of main UC
+- [x] Add fluid navigation between screens
+- [ ] Add Modal screens to create and edit
+- [ ] Add Functions to register
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/hnralmeida/CRMexReact/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,9 +171,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Henrique - [@hnralmeida](https://instagram.com/hnralmeida) - devhnralmeida@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/hnralmeida/CRMexReact](https://github.com/hnralmeida/CRMexReact)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,15 +182,19 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+This page development is made with useful help of references and API from:
+* [MUI Material]([https://choosealicense.com](https://mui.com/))
+* [CSS Mozilla Developer Docs](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+* [Chat CPT](https://chat.openai.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[dashboard_1]: https://github.com/hnralmeida/CRMexReact/blob/main/public/Dashboard_1.png?raw=true
+[dashboard_2]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Dashboard_2.png?raw=true
+[datagrid_1]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Datagrid.png?raw=true
+[product-screenshot]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Product.png?raw=true
+[Vite.js]: https://img.shields.io/badge/vite.js-000000?style=for-the-badge&logo=vite
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
