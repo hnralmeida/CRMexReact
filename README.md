@@ -70,7 +70,7 @@ CRM example built with React, authentication with firebase. The id is from the a
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![React][React.js]](https://reactjs.org/)
-* [![Vite][Vite.js]][https://vitejs.dev/]
+* [![Vite][Vite.js]](https://vitejs.dev/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,10 +115,10 @@ _Below is an example of how you can instruct your audience on installing and set
 ## Usage
 
 You can get a powerful workspace to create and administrate your company.
-[![Dashboard with full sidebar][dashboard_1]]
+![Dashboard with full sidebar][dashboard_1]
 
 Flexible interface.
-[![Dashboard with hided sidebar][dashboard_2]]
+![Dashboard with hided sidebar][dashboard_2]
 
 Administrate your resources!
 [![Dashboard with full sidebar][datagrid]]
@@ -192,7 +192,7 @@ This page development is made with useful help of references and API from:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[dashboard_1]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Dashboard_1.png
+[dashboard_1]: https://github.com/hnralmeida/CRMexReact/blob/main/public/Dashboard_1.png?raw=true
 [dashboard_2]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Dashboard_2.png
 [datagrid_1]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Datagrid.png
 [product-screenshot]: https://github.com/hnralmeida/CRMexReact/tree/main/public/Product.png
