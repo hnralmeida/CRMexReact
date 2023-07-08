@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import React from "react";
 import ENV from "../../../env";
 
-function Login() {
+function Dashboard() {
 
     const [urlSrc, setUrlSrc] = React.useState("");
 
@@ -29,17 +29,19 @@ function Login() {
 
     return (
         <>
-            <Header title="Dashboard" subtitle="Página Inicial" />
-            
-            <Box display="flex" justifyContent="center">
-                <Box component="img" src={urlSrc} height="500px" sx={{
-                    mixBlendMode: 'multiply',
-                }}
-                />
-            </Box>
+            <Box >
 
+                <Header title="Dashboard" subtitle="Página Inicial" />
+
+                <Box display="flex" justifyContent="center">
+                    <Box component="img" src={urlSrc} height="500px" sx={{
+                        mixBlendMode: 'multiply',
+                    }}
+                    />
+                </Box>
+            </Box>
         </>
     )
 }
 
-export default Login
+export default Dashboard

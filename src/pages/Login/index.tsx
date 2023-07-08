@@ -73,12 +73,14 @@ function Login() {
                             <Button
                                 href="#text-buttons"
                                 onClick={() => navigate('/forgot')}
+                                color="error"
                             >
                                 Esqueceu a senha?
                             </Button>
                             <Button
                                 href="#text-buttons"
                                 onClick={() => navigate('/register')}
+                                color="error"
                             >
                                 Criar Nova Conta
                             </Button>

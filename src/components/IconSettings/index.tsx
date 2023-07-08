@@ -24,7 +24,7 @@ const IconSettings = () => {
     };
 
     const handleClickEmpresa = () => {
-        navigate('../minhaempresa');
+        navigate('../minhaconta');
     };
 
     const open = Boolean(anchorEl);

@@ -123,6 +123,7 @@ a:hover {
 .links {
   display: flex;
   justify-content: space-evenly;
+  color: black;
 
   @media (max-width: 800px) {
     margin-left: 0px;

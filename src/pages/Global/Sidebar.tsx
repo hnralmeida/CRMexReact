@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Sidebar as ProSidebar, useProSidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
-import { Box, IconButton, Typography } from '@mui/material';
+import { Sidebar as ProSidebar, useProSidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Box, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -8,7 +8,6 @@ import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import InventoryIcon from '@mui/icons-material/Inventory';
 import PaymentIcon from '@mui/icons-material/Payment';
 import { useAuth } from '../../contexts/authProvider';
@@ -48,7 +47,7 @@ function Sidebar() {
         >
             <ProSidebar breakPoint="sm"
                 transitionDuration={800}
-                backgroundColor="#1B2957"
+                backgroundColor="rgb(229, 68, 00)"
                 rtl={false}
                 style={{ height: "92vh" }}
             >
@@ -90,39 +89,39 @@ function Sidebar() {
 
                     <Item
                         icon={<PeopleOutlinedIcon />}
-                        title="Vendedores"
-                        to="/vendedor"
+                        title="Itens"
+                        to="/itens"
                         selected={selected}
                         setSelected={setSelected}
                     />
 
                     <Item
                         icon={<ContactsOutlinedIcon />}
-                        title="Clientes"
-                        to="/clientes"
+                        title="Lojas"
+                        to="/lojas"
                         selected={selected}
                         setSelected={setSelected}
 
                     />
                     <Item
                         icon={<AttachMoneyIcon />}
-                        title="Formas de pagamento"
-                        to="/pagamento"
+                        title="Estoques"
+                        to="/estoques"
                         selected={selected}
                         setSelected={setSelected}
 
                     />
                     <Item
                         icon={<PaymentIcon />}
-                        title="Parcelas"
-                        to="/parcelas"
+                        title="Cidades"
+                        to="/cidades"
                         selected={selected}
                         setSelected={setSelected}
                     />
                     <Item
                         icon={<InventoryIcon />}
-                        title="Produtos"
-                        to="/produtos"
+                        title="Categorias"
+                        to="/categorias"
                         selected={selected}
                         setSelected={setSelected}
                     />

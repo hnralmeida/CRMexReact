@@ -5,28 +5,27 @@ import Topbar from '../pages/Global/Topbar';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 
 import Dashboard from '../pages/Dashboard';
-import Clientes from '../pages/Clientes';
-import CadastroClientes from '../pages/CadastroClientes';
-import Vendedores from '../pages/Vendedor';
+import UpdateAccount from '../pages/EditarConta';
+import Redirector from '../pages/Redirector';
+import Pagina_1 from '../pages/Pagina_1';
+import Pagina_2 from '../pages/Pagina_2';
+import Pagina_3 from '../pages/Pagina_3';
+import Pagina_4 from '../pages/Pagina_4';
+import Pagina_5 from '../pages/Pagina_5';
 
-import CadastroProduto from '../pages/CadastroProduto';
-import Produto from '../pages/Produto';
-import EditarProduto from '../pages/EditarProduto';
-import UpdateEmpresa from '../pages/EditarEmpresa';
+import CadastroPagina_1 from '../pages/CadastroPagina_1';
+import CadastroPagina_2 from '../pages/CadastroPagina_2';
+import CadastroPagina_3 from '../pages/CadastroPagina_3';
+import CadastroPagina_4 from '../pages/CadastroPagina_4';
+import CadastroPagina_5 from '../pages/CadastroPagina_5';
+
+import EditarPagina_1 from '../pages/EditarPagina_1';
+import EditarPagina_2 from '../pages/EditarPagina_2';
+import EditarPagina_3 from '../pages/EditarPagina_3';
+import EditarPagina_4 from '../pages/EditarPagina_4';
+import EditarPagina_5 from '../pages/EditarPagina_5';
 
 import { dashboardTheme } from '../typo';
-import Redirector from '../pages/Redirector';
-import CadastroVendedor from '../pages/CadastroVendedor';
-import EditarVendedor from '../pages/EditarVendedor';
-
-import CadastroFormaPgto from '../pages/CadastroFormaPgto';
-import FormaPgto from '../pages/FormaPgto';
-import EditarFormapgto from '../pages/EditarFormapgto';
-import EditarCliente from '../pages/EditarCliente';
-
-import Percelas from '../pages/Parcelas';
-import CadastroPercelas from '../pages/CadastroPacelas';
-
 
 export function StackRoutes() {
     const theme = dashboardTheme;
@@ -45,28 +44,33 @@ export function StackRoutes() {
                                 <Routes>
                                     <Route path="/" element={<Dashboard />} />
                                     <Route path="/dashboard" element={<Dashboard />} />
-                                    <Route path="/clientes" element={<Clientes />} />
-                                    <Route path="/cadastrar" element={<CadastroClientes />} />
-                                    <Route path="/vendedor" element={<Vendedores />} />
-                                    <Route path="/vendedor/cadastrar" element={<CadastroVendedor/>} />
-                                    <Route path="/vendedor/editar/:id" element={<EditarVendedor />} />
-                                    <Route path="/clientes/editar/:id" element={<EditarCliente />} />
-                                    <Route path="/produtos" element={<Produto />} />
-                                    <Route path="/minhaempresa" element={<UpdateEmpresa />} />
-                                    <Route path="/cadastrar/produto" element={<CadastroProduto />} />
-                                    <Route path="/produtos/editar/:id" element={<EditarProduto />} />
-                                    <Route path="/pagamento" element={<FormaPgto />} />
-                                    <Route path="/pagamento/cadastrar" element={<CadastroFormaPgto />} />
-                                    <Route path="/pagamentos/editar/:id/" element={<EditarFormapgto/>}/>
-                                    <Route path="/parcelas" element={<Percelas />} />
-                                    <Route path="/parcelas/cadastrar" element={<CadastroPercelas />} />
-                                    <Route path="/parcelas/editar/:id" element={<Percelas />} />
-                                    
+                                    <Route path="/minhaconta" element={<UpdateAccount />} />
+
+                                    <Route path="/itens" element={<Pagina_1 />} />
+                                    <Route path="/itens/cadastrar" element={<CadastroPagina_1 />} />
+                                    <Route path="/itens/editar/:id" element={<EditarPagina_1 />} />
+
+                                    <Route path="/lojas" element={<Pagina_2 />} />
+                                    <Route path="/lojas/cadastrar" element={<CadastroPagina_2 />} />
+                                    <Route path="/lojas/editar/:id" element={<EditarPagina_2 />} />
+
+                                    <Route path="/estoques" element={<Pagina_3 />} />
+                                    <Route path="/estoques/cadastrar" element={<CadastroPagina_3 />} />
+                                    <Route path="/estoques/editar/:id/" element={<EditarPagina_3 />} />
+
+                                    <Route path="cidades" element={<Pagina_4 />} />
+                                    <Route path="cidades/cadastrar" element={<CadastroPagina_4 />} />
+                                    <Route path="cidades/editar/:id" element={<EditarPagina_4 />} />
+
+                                    <Route path="/categorias" element={<Pagina_5 />} />
+                                    <Route path="/categorias/cadastrar" element={<CadastroPagina_5 />} />
+                                    <Route path="/categorias/editar/:id" element={<EditarPagina_5 />} />
+
                                     <Route path="/*" element={<Redirector />} />
                                 </Routes>
                             </div>
                         </main>
-                    </div> 
+                    </div>
                 </ProSidebarProvider>
             </ThemeProvider>
         </>
